@@ -19,16 +19,16 @@ namespace ModelEF.Model
         public virtual DbSet<ContentTag> ContentTags { get; set; }
         public virtual DbSet<Credential> Credentials { get; set; }
         public virtual DbSet<Feedback> Feedbacks { get; set; }
-        public virtual DbSet<Footer> Footers { get; set; }
+     
         public virtual DbSet<Language> Languages { get; set; }
-        public virtual DbSet<Menu> Menus { get; set; }
+
         public virtual DbSet<MenuType> MenuTypes { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<OrderDetail> OrderDetails { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<ProductCategory> ProductCategories { get; set; }
         public virtual DbSet<Role> Roles { get; set; }
-        public virtual DbSet<Slide> Slides { get; set; }
+       
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<SystemConfig> SystemConfigs { get; set; }
         public virtual DbSet<Tag> Tags { get; set; }
@@ -105,9 +105,7 @@ namespace ModelEF.Model
                 .Property(e => e.RoleID)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Footer>()
-                .Property(e => e.ID)
-                .IsUnicode(false);
+          
 
             modelBuilder.Entity<Language>()
                 .Property(e => e.ID)
@@ -169,13 +167,9 @@ namespace ModelEF.Model
                 .Property(e => e.ID)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Slide>()
-                .Property(e => e.CreatedBy)
-                .IsUnicode(false);
+           
 
-            modelBuilder.Entity<Slide>()
-                .Property(e => e.ModifiedBy)
-                .IsUnicode(false);
+         
 
             modelBuilder.Entity<SystemConfig>()
                 .Property(e => e.ID)

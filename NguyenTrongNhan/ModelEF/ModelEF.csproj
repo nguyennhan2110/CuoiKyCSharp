@@ -62,13 +62,10 @@
     <Compile Include="Dao\CategoryDao.cs" />
     <Compile Include="Dao\ContactDao.cs" />
     <Compile Include="Dao\ContentDao.cs" />
-    <Compile Include="Dao\FooterDao.cs" />
-    <Compile Include="Dao\MenuDao.cs" />
     <Compile Include="Dao\OrderDao.cs" />
     <Compile Include="Dao\OrderDetailDao.cs" />
     <Compile Include="Dao\ProductCategoryDao.cs" />
     <Compile Include="Dao\ProductDao.cs" />
-    <Compile Include="Dao\SlideDao.cs" />
     <Compile Include="Dao\UserDao.cs" />
     <Compile Include="Dao\UserGroupDao.cs" />
     <Compile Include="Model\About.cs" />
@@ -78,9 +75,7 @@
     <Compile Include="Model\ContentTag.cs" />
     <Compile Include="Model\Credential.cs" />
     <Compile Include="Model\Feedback.cs" />
-    <Compile Include="Model\Footer.cs" />
     <Compile Include="Model\Language.cs" />
-    <Compile Include="Model\Menu.cs" />
     <Compile Include="Model\MenuType.cs" />
     <Compile Include="Model\NguyenTrongNhanContext.cs" />
     <Compile Include="Model\Order.cs" />
@@ -88,7 +83,6 @@
     <Compile Include="Model\Product.cs" />
     <Compile Include="Model\ProductCategory.cs" />
     <Compile Include="Model\Role.cs" />
-    <Compile Include="Model\Slide.cs" />
     <Compile Include="Model\sysdiagram.cs" />
     <Compile Include="Model\SystemConfig.cs" />
     <Compile Include="Model\Tag.cs" />
