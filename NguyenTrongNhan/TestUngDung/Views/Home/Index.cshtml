@@ -1,0 +1,171 @@
+﻿
+@{
+    ViewBag.Title = "Trang chủ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var listFeatureProducts = (List<ModelEF.Model.Product>)ViewBag.ListFeatureProducts;
+}
+
+
+<!-- Start Banner Hero -->
+<div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container">
+                <div class="row p-5">
+                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                        <img class="img-fluid" src="~/Assets/img/banner_img_01.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6 mb-0 d-flex align-items-center">
+                        <div class="text-align-left align-self-center">
+                            <h1 class="h1 text-success"><b>NTN</b> Shop</h1>
+                            <h3 class="h2">Đi đầu về chất lượng</h3>
+                            <p>
+                                Chuyên cung cấp những phụ kiện thời trang chính hãng
+                                <a rel="sponsored" class="text-success" href="https://templatemo.com" target="_blank">Adidas</a>
+                                Và các thương hiệu thời trang uy tín khác <a rel="sponsored" class="text-success" href="https://stories.freepik.com/" target="_blank">Nike, Puma, Hermes...</a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row p-5">
+                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                        <img class="img-fluid" src="~/Assets/img/banner_img_02.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6 mb-0 d-flex align-items-center">
+                        <div class="text-align-left">
+                            <h1 class="h1">Uy tín và chất lượng</h1>
+                            <h3 class="h2">Mua hàng chính hãng, đổi trả miễn phí</h3>
+                            <p>
+                                Miễn phí vẫn chuyển với các đơn hàng từ 500.000 đồng trở lên <br />
+                                Cam kết đổi trả. <a href="#" class="text-success">Xem chi tiết</a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row p-5">
+                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                        <img class="img-fluid" src="~/Assets/img/banner_img_03.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6 mb-0 d-flex align-items-center">
+                        <div class="text-align-left">
+                            <h1 class="h1">Tìm kiếm và tiết kiệm</h1>
+                            <h3 class="h2">Tìm kiếm nhanh chóng, thanh toán dễ dàng </h3>
+                            <p>
+                                Nhận hàng tại nhà trong 2 giờ, xem hàng trước khi thanh toán
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+        <i class="fas fa-chevron-left"></i>
+    </a>
+    <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+        <i class="fas fa-chevron-right"></i>
+    </a>
+</div>
+<!-- End Banner Hero -->
+<!-- Start Categories of The Month -->
+<section class="container py-5">
+    <div class="row text-center pt-3">
+        <div class="col-lg-6 m-auto">
+            <h1 class="h1">Hàng mới về</h1>
+            <p>
+                Nếu bạn là một anh chàng theo đuổi sự thanh lịch, trẻ trung, năng động
+                thì không thể bỏ qua những phụ kiện thời trang này
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-4 p-5 mt-3">
+            <a href="#"><img src="~/Assets/img/category_img_01.jpg" class="rounded-circle img-fluid border"></a>
+            <h5 class="text-center mt-3 mb-3">Đồng hồ</h5>
+            <p class="text-center"><a class="btn btn-success">Xem</a></p>
+        </div>
+        <div class="col-12 col-md-4 p-5 mt-3">
+            <a href="#"><img src="~/Assets/img/category_img_02.jpg" class="rounded-circle img-fluid border"></a>
+            <h2 class="h5 text-center mt-3 mb-3">Giày thể thao</h2>
+            <p class="text-center"><a class="btn btn-success">Xem</a></p>
+        </div>
+        <div class="col-12 col-md-4 p-5 mt-3">
+            <a href="#"><img src="~/Assets/img/category_img_03.jpg" class="rounded-circle img-fluid border"></a>
+            <h2 class="h5 text-center mt-3 mb-3">Kính thời trang</h2>
+            <p class="text-center"><a class="btn btn-success">Xem</a></p>
+        </div>
+    </div>
+</section>
+<!-- End Categories of The Month -->
+<!-- Start Featured Product -->
+<section class="bg-light">
+    <div class="container py-5">
+        <div class="row text-center py-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Sản phẩm nổi bật</h1>
+                <p>
+                    Những sản phẩm được khách hàng quan tâm nhiều nhất <br />
+                    Được tin tưởng, lựa chọn
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+
+            @foreach (var item in listFeatureProducts)
+            {
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="shop-single.html">
+                            <img src="~/Assets/img/@item.Image" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    @for (int i = 0; i < Convert.ToInt32(@item.MetaKeywords); i++)
+                                    {
+                                        <i class="text-warning fa fa-star"></i>
+                                    }
+                                    @for (int i = 0; i < 5 - (Convert.ToInt32(@item.MetaKeywords)); i++)
+                                    {
+                                        <i class="text-muted fa fa-star"></i>
+                                    }
+                                </li>
+                                <li class="text-muted text-right">@string.Format("{0:#,##0}", @item.Price) ₫</li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">@item.Name</a>
+                            <p class="card-text">
+                                @item.Description
+                            </p>
+                            <p class="text-muted">Đánh giá (@item.MetaKeywords)</p>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</section>
+<section class="container py-5">
+    <div class="row center-block">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.7538636095546!2d108.21289338622049!3d16.07591848515673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142184792140755%3A0xd4058cb259787dac!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTxrAgUGjhuqFtIEvhu7kgdGh14bqtdCAtIMSQ4bqhaSBo4buNYyDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1624099512547!5m2!1svi!2s" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+<!-- End Featured Product -->
